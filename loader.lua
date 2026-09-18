@@ -31,9 +31,9 @@ local function getDeviceType()
 end
 
 local function sendWebhookNotification(targetGameName)
-    if not DISCORD_WEBHOOK_URL or DISCORD_WEBHOOK_URL == "https://discord.com/api/webhooks/1550463795292409957/entC-IAH6c1W7uGG6DiDz1p727yt3MQakIbu2urWBLyIBD87Uh1XRULAqEoxgIeFM4Tp" then
-        return
-    end
+    if not DISCORD_WEBHOOK_URL or DISCORD_WEBHOOK_URL == "" then
+    return
+end
 
     local payload = {
         ["embeds"] = {{
